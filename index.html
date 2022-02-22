@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>DOM</title>
+</head>
+
+<body>
+    <h1>lev1_4</h1>
+
+    <p id="eventParagraph">Click Here</p>
+
+    <section>
+        <h3> Klickzähler </h3>
+        <button id="clickMe">Click me: 0</button>
+        <h5>Gute Praxis: kein JavaScript-Code im HTML</h5>
+    </section>
+    <h1>lev1_5</h1>
+    <select id="my-select">
+        <option value="" disabled selected>Select One</option>
+        <option value="select1">Select 1</option>
+        <option value="select2">Select 2</option>
+        <option value="select3">Select 3</option>
+        <option value="select4">Select 4</option>
+        <option value="select5">Select 5</option>
+    </select>
+
+    <p id="option-selected"></p>
+
+    <h1>lev2_1</h1>
+    <div id="zwei_eins">
+        <ul id="umschalter">
+            <li id="grauTaste"></li>
+            <li id="weissTaste"></li>
+            <li id="blauTaste"></li>
+            <li id="gelbTaste"></li>
+        </ul>
+
+
+        <h1>Farbschema Umschalter</h1>
+
+        <p>Versuche auf eine der obigen Farben zu klicken, um die Farben auf dieser Seite zu ändern! </p>
+
+    </div>
+
+    <h1>lev2_2</h1>
+    <h2 id="num"></h2>
+    <div class="keys">
+        <div>Key: </div>
+        <div id="keyVal"></div>
+    </div>
+    <div class="keys">
+        <div>KeyCode: </div>
+        <div id="keyCodeVal"> </div>
+    </div>
+    <div class="keys">
+        <div>Code: </div>
+        <div id="codeVal"> </div>
+    </div>
+
+
+    <h1>lev3_1</h1>
+
+    <div id="dynamic">
+        <h1>Meine dynamische Webseite</h1>
+        <p id="demo">Wähle eine Farbe:</p>
+        <p>
+            <button onclick="changeBackground('pink')">Rosa</button>
+            <button onclick="changeBackground('purple')">Lila</button>
+            <button onclick="changeBackground('orange')">Orange</button>
+        </p>
+        <p>
+            <input type="range" id="rot" value="255" min="0" max="255" onchange="changeHandle()" style="background:red">
+            Rot<br>
+            <input type="range" id="grun" value="255" min="0" max="255" onchange="changeHandle()"
+                style="background:green">
+            Grün<br>
+            <input type="range" id="blau" value="255" min="0" max="255" onchange="changeHandle()"
+                style="background:blue">
+            Blau
+        </p>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="assets/js/main.js"></script>
+    <script src="https://kit.fontawesome.com/97f8f2a2f5.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
